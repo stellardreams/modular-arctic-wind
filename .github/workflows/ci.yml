@@ -1,0 +1,14 @@
+name: Arctic Wind CI Verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Verification Suite
+        run: |
+          chmod +x scripts/test_wind.sh
+          ./scripts/test_wind.sh
