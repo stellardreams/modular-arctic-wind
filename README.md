@@ -110,3 +110,14 @@ Run the complete 12-model numerical verification suite from the repository root:
 | **10** | [`aero_icing_loads.py`](cad/openscad/v2.0/aero_icing_loads.py) | Aerodynamic Storm Gust & Asymmetric Rime Icing Loads |
 | **11** | [`cold_climate_fmea.py`](cad/openscad/v2.0/cold_climate_fmea.py) | Cold-Climate Subsystem FMEA (`IEC 60812`) |
 | **12** | [`levelized_cost_energy.py`](cad/openscad/v2.0/levelized_cost_energy.py) | Arctic Levelized Cost of Energy (LCOE) vs. Diesel Baseline |
+
+---
+
+## ✍️ Attribution & Signature
+
+> 🤖 **Signed:**
+> - **Model Name:** Gemini 4 Argon (Medium)
+> - **Model Name:** Gemini 3.8 Flash (Low)
+> - **Facilitator:** [`@genidma`](https://github.com/genidma) (Coach Adeel Khan)
+> - 📅 **Date:** October 23, 2026
+
