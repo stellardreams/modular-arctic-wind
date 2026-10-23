@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Wind v2.0 Package 2 -- Mast Structure & Tilt-Up Erection Kinematics (#86)
+Wind v2.0 Package 2 -- Mast Structure & Tilt-Up Hoisting Kinematics (#86)
 
 Simulates the mechanical kinematics and cable tensions for erecting a 24 m
 hub-height modular wind turbine mast using an integrated gin-pole (A-frame)
@@ -106,7 +106,7 @@ def compute_kinematics(theta_deg):
 
 def run_simulation():
     print("=" * 70)
-    print(" WIND v2.0 PACKAGE 2: MAST TILT-UP ERECTION KINEMATICS (#86)")
+    print(" WIND v2.0 PACKAGE 2: MAST TILT-UP HOISTING KINEMATICS (#86)")
     print("=" * 70)
     print(f"Hub Height:                  {HUB_HEIGHT_M:.1f} m ({NUM_SECTIONS} sections @ {SECTION_LENGTH_M:.2f} m each)")
     print(f"Mast Section Length:         {SECTION_LENGTH_M:.2f} m (< 5.89 m container length: PASS)")
@@ -163,7 +163,7 @@ def run_simulation():
     gin_buckling_fs = P_CRIT_DUAL_LEG_KN / max_gin_comp
     assert gin_buckling_fs >= 2.0, f"Gin pole buckling safety factor insufficient: {gin_buckling_fs:.2f} < 2.0"
 
-    print(f"VERIFICATION: PASS -- All mast erection kinematic & structural safety checks pass cleanly.")
+    print(f"VERIFICATION: PASS -- All mast hoisting kinematic & structural safety checks pass cleanly.")
     print(f"  - Section length: {SECTION_LENGTH_M:.2f} m <= 5.89 m container limit")
     print(f"  - Winch wire rope safety factor: {winch_cable_fs:.2f} (>= 3.0 required)")
     print(f"  - Gin-pole dual-leg Euler buckling safety factor: {gin_buckling_fs:.2f} (>= 2.0 required)")

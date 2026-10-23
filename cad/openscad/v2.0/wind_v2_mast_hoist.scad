@@ -228,7 +228,7 @@ module container_foundation_subassembly() {
 }
 
 // --- Main Assembly with Parametric Tilt Angle ---
-module wind_v2_mast_erection_assembly() {
+module wind_v2_mast_hoist_assembly() {
     // 1. Fixed Container Foundation
     if (SHOW_CONTAINER_BASE) {
         container_foundation_subassembly();
@@ -270,4 +270,4 @@ module wind_v2_mast_erection_assembly() {
 }
 
 // Render root
-wind_v2_mast_erection_assembly();
+wind_v2_mast_hoist_assembly();

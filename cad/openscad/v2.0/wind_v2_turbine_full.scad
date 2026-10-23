@@ -19,7 +19,7 @@
 
 $fn = 32;
 
-use <wind_v2_mast_erection.scad>
+use <wind_v2_mast_hoist.scad>
 use <wind_v2_nacelle.scad>
 
 // Full 26 m 3-bladed rotor assembly with realistic chord taper and anti-icing edges

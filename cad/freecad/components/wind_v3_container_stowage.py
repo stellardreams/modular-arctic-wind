@@ -73,7 +73,7 @@ def build_container_stowage_solid():
     nacelle_stowed = Part.makeCylinder(0.55, 3.00, FreeCAD.Vector(CONT_L / 2.0 - 3.30, 0, 0.90), FreeCAD.Vector(1, 0, 0))
     solids.append(skid.fuse(nacelle_stowed))
 
-    # 5. Stowed Gin-Pole Erection Winch Pack & Cable Reels
+    # 5. Stowed Gin-Pole Hoisting Winch Pack & Cable Reels
     winch_pack = Part.makeBox(0.80, 0.90, 0.70, FreeCAD.Vector(CONT_L / 2.0 - 1.00, -CONT_W / 2.0 + 0.25, 0.14))
     solids.append(winch_pack)
 

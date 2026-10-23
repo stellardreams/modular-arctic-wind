@@ -3,14 +3,14 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUT_DIR="/tmp/wind_v2_anim_frames"
-SCAD_FILE="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_erection.scad"
-GIF_OUT="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_erection.gif"
-MP4_OUT="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_erection.mp4"
+SCAD_FILE="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_hoist.scad"
+GIF_OUT="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_hoist.gif"
+MP4_OUT="${REPO_ROOT}/cad/openscad/v2.0/wind_v2_mast_hoist.mp4"
 
 mkdir -p "$OUT_DIR"
 rm -f "$OUT_DIR"/*.png
 
-echo "Rendering 31 frames of mast erection (0° to 90°) zoomed out by an additional 30%..."
+echo "Rendering 31 frames of mast hoisting (0° to 90°) zoomed out by an additional 30%..."
 for i in $(seq 0 30); do
     angle=$(echo "scale=1; $i * 3.0" | bc)
     frame=$(printf "%03d" "$i")

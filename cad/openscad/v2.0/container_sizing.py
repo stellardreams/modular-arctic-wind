@@ -111,7 +111,7 @@ def main():
     print("      needs a 39 m rotor for 25 kW; a 7 m/s site needs 23 m. Same machine,")
     print("      3x the rotor. **This is the first thing to obtain.**")
     print()
-    print("  (b) ERECTION. Hub height should be roughly 0.8-1.2 x rotor diameter.")
+    print("  (b) HOISTING. Hub height should be roughly 0.8-1.2 x rotor diameter.")
     for D in (23.0, 30.0, 45.0):
         h = 1.0 * D
         print(f"      rotor {D:>4.0f} m -> hub about {h:>4.0f} m "

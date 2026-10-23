@@ -19,7 +19,7 @@ MODELS=(
     "power_resource.py:Power Resource Sizing & Betz Limit Audit"
     "container_sizing.py:ISO 20ft Container Internal Geometry"
     "foundation_load_envelope.py:Foundation Overturning & Ballast Stability"
-    "erection_kinematics.py:Gin-Pole A-Frame Winch Line Kinematics"
+    "hoist_kinematics.py:Gin-Pole A-Frame Winch Line Kinematics"
     "powertrain_envelope.py:Direct-Drive PMSG & Nacelle Architecture"
     "container_pack_audit.py:Complete 20ft Container Payload Mass Audit"
     "microgrid_dispatch.py:Annual Hourly Microgrid & Diesel Displacement"

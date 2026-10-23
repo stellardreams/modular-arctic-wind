@@ -16,7 +16,7 @@ Tracked in [#82](https://github.com/stellardreams/asi.surge.sh/issues/82).
 |---|---|
 | Purpose | generate electricity, **25–100 kW** |
 | Transport | 20 ft sea container — max 108″ W × 268″ L × 96″ H, max 24 000 lb (10 886 kg) |
-| Erection | **no heavy lift equipment** |
+| Hoisting | **no heavy lift equipment** |
 | Extreme cold | **−60 °C** |
 | High wind | **80–120 km/h** (22.22–33.33 m/s) |
 | Ground | frozen, deep snow, rugged terrain, permafrost |
@@ -97,8 +97,8 @@ Each trades against something.
 | [`container_sizing.py`](container_sizing.py) | container envelope → section and mass budget; what it does and does not decide |
 | [`foundation_load_envelope.py`](foundation_load_envelope.py) / [`foundation.md`](foundation.md) | Package 1: foundation load envelope, overturning safety, permafrost anchors (#85) |
 | [`wind_v2_foundation.scad`](wind_v2_foundation.scad) | Package 1: 3D CAD foundation assembly (container, cribbing, anchors, trunnion) |
-| [`erection_kinematics.py`](erection_kinematics.py) / [`mast_erection.md`](mast_erection.md) | Package 2: tilt-up kinematics, winch line tension, gin-pole buckling (#86) |
-| [`wind_v2_mast_erection.scad`](wind_v2_mast_erection.scad) | Package 2: 3D CAD modular mast, gin-pole A-frame, and tilt-up stages |
+| [`hoist_kinematics.py`](hoist_kinematics.py) / [`mast_hoisting.md`](mast_hoisting.md) | Package 2: tilt-up kinematics, winch line tension, gin-pole buckling (#86) |
+| [`wind_v2_mast_hoist.scad`](wind_v2_mast_hoist.scad) | Package 2: 3D CAD modular mast, gin-pole A-frame, and tilt-up stages |
 | [`powertrain_envelope.py`](powertrain_envelope.py) / [`powertrain.md`](powertrain.md) | Package 3: Arctic direct-drive PMSG sizing, thermal self-heating, bearing grease (#87) |
 | [`wind_v2_nacelle.scad`](wind_v2_nacelle.scad) | Package 3: 3D CAD nacelle bedplate, PMSG generator, yaw drive, fail-safe brake |
 | [`container_pack_audit.py`](container_pack_audit.py) / [`stowage_and_microgrid.md`](stowage_and_microgrid.md) | Package 4: 20 ft ISO stowage audit, electro-thermal anti-icing, microgrid (#88) |
@@ -112,7 +112,7 @@ All self-check and exit `0`.
 Wind v2.0 is tracked under parent **[#82](https://github.com/stellardreams/asi.surge.sh/issues/82)**, sequenced from the ground up across four dedicated child issues:
  
 - **[#85 — Package 1: Foundation & Arctic Ground Interface](https://github.com/stellardreams/asi.surge.sh/issues/85):** Container reaction footing/ballasting, permafrost ground anchoring (no wet concrete), thermal isolation pad, and ISO corner-casting hinge interfaces.
-- **[#86 — Package 2: Mast Structure & Tilt-Up Erection Kinematics](https://github.com/stellardreams/asi.surge.sh/issues/86):** Modular sectional tower (transportable in 20 ft ISO box), gin-pole (A-frame) rigging, winch trajectory (zero heavy lift), and guy-wire load paths under 120 km/h winds.
+- **[#86 — Package 2: Mast Structure & Tilt-Up Hoisting Kinematics](https://github.com/stellardreams/asi.surge.sh/issues/86):** Modular sectional tower (transportable in 20 ft ISO box), gin-pole (A-frame) rigging, winch trajectory (zero heavy lift), and guy-wire load paths under 120 km/h winds.
 - **[#87 — Package 3: Arctic Direct-Drive Powertrain (−60 °C) & Nacelle](https://github.com/stellardreams/asi.surge.sh/issues/87):** Direct-drive PMSG (no freeze-prone gearbox lubricants), low-temperature bearing selection, fail-safe aerodynamic braking, and thermal containment.
 - **[#88 — Package 4: Sectional Rotor, Anti-Icing & Microgrid System Packaging](https://github.com/stellardreams/asi.surge.sh/issues/88):** 50 kW sectional composite rotor blades, quick-connect spar joints, leading-edge anti-icing to counter [rime icing](https://en.wikipedia.org/wiki/Hard_rime), low-EMI microgrid converter, and total 20 ft container stowage layout.
 

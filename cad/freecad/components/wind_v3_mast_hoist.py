@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-wind_v3_mast_erection.py - Parametric FreeCAD Solid Model for Sectional Mast & Gin-Pole Rigging (v3.1)
+wind_v3_mast_hoist.py - Parametric FreeCAD Solid Model for Sectional Mast & Gin-Pole Rigging (v3.1)
 
 =============================================================================
 METADATA & SPECIFICATION TRACEABILITY
@@ -9,7 +9,7 @@ __version__     = "3.1.0"
 __revision__    = "v3.1.0-subsystem-breakdown"
 __author__      = "Stellar Dreams Engineering"
 __date__        = "2026-10-17"
-__target_spec__ = "Modular Arctic Mast & Erection Rigging (Package 2 under Issues #104 and #82)"
+__target_spec__ = "Modular Arctic Mast Mast & Erection Rigging Hoisting Rigging (Package 2 under Issues #104 and #82)"
 __kernel__      = "OpenCASCADE (B-Rep analytical geometry) via FreeCAD Part module"
 __lineage__     = "FreeCAD component breakdown evolved from OpenSCAD wind_v2_mast_erection.scad"
 __ecosystem__   = "Note: Companion AMU, CORA-M, and STRIDER-M inventions are primarily handled via https://github.com/stellardreams/asi.surge.sh"
@@ -40,7 +40,7 @@ GUY_RING_Z    = 16.0
 GUY_CABLE_D   = 0.024
 
 
-def build_mast_erection_solid():
+def build_mast_hoist_solid():
     """Builds sectional tubular mast, guy ring with clevises/turnbuckles, and gin-pole winch rigging."""
     solids = []
 
@@ -115,12 +115,12 @@ def build_mast_erection_solid():
 
 
 if __name__ == "__main__":
-    print("Building Wind Turbine v3.1 Mast & Erection Rigging Subsystem...")
-    solid = build_mast_erection_solid()
+    print("Building Wind Turbine v3.1 Mast Mast & Erection Rigging Hoisting Rigging Subsystem...")
+    solid = build_mast_hoist_solid()
     print(f"Valid B-Rep Solid: {solid.isValid()} | Faces: {len(solid.Faces)} | Volume: {solid.Volume:.2f} m³")
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    out_step = os.path.join(script_dir, "..", "..", "step_exports", "wind_v3_mast_erection.step")
+    out_step = os.path.join(script_dir, "..", "..", "step_exports", "wind_v3_mast_hoist.step")
     os.makedirs(os.path.dirname(out_step), exist_ok=True)
     solid.exportStep(out_step)
     print(f"✅ Exported: {out_step} ({os.path.getsize(out_step):,} bytes)")

@@ -32,8 +32,8 @@ An autonomous, rapidly deployable, containerized polar wind power generation sys
 
 | **360° Solid Model Turntable (`v3.1`)** | **Crane-Less Gin-Pole Tilt-Up ($0^\circ \to 90^\circ$)** |
 | :---: | :---: |
-| ![Modular Wind Turbine v3 Turntable](cad/freecad/renders/modular_wind_turbine_v3_turntable.gif) | ![Modular Wind Turbine v3 Deployment](cad/freecad/renders/modular_wind_turbine_v3_erection.gif) |
-| *MP4 Video: [`modular_wind_turbine_v3_turntable.mp4`](cad/freecad/renders/modular_wind_turbine_v3_turntable.mp4)* | *MP4 Video: [`modular_wind_turbine_v3_erection.mp4`](cad/freecad/renders/modular_wind_turbine_v3_erection.mp4)* |
+| ![Modular Wind Turbine v3 Turntable](cad/freecad/renders/modular_wind_turbine_v3_turntable.gif) | ![Modular Wind Turbine v3 Deployment](cad/freecad/renders/modular_wind_turbine_v3_hoist.gif) |
+| *MP4 Video: [`modular_wind_turbine_v3_turntable.mp4`](cad/freecad/renders/modular_wind_turbine_v3_turntable.mp4)* | *MP4 Video: [`modular_wind_turbine_v3_hoist.mp4`](cad/freecad/renders/modular_wind_turbine_v3_hoist.mp4)* |
 
 | **Cinematic Orbit (`v3.1`)** | **Cooperative Field Hoisting (`STRIDER-M` + `CORA-M` + Wind `v3.1`)** |
 | :---: | :---: |
@@ -58,8 +58,8 @@ An autonomous, rapidly deployable, containerized polar wind power generation sys
 
 | **Package 1: Container Foundation & Outriggers** | **Package 2: Sectional Mast & Gin-Pole Rigging** | **Package 3: Direct-Drive PMSG Arctic Nacelle** |
 | :---: | :---: | :---: |
-| ![Foundation](cad/freecad/renders/wind_v3_foundation.png) | ![Mast Hoisting Rig](cad/freecad/renders/wind_v3_mast_erection.png) | ![Nacelle](cad/freecad/renders/wind_v3_nacelle.png) |
-| [`wind_v3_foundation.py`](cad/freecad/components/wind_v3_foundation.py) | [`wind_v3_mast_erection.py`](cad/freecad/components/wind_v3_mast_erection.py) | [`wind_v3_nacelle.py`](cad/freecad/components/wind_v3_nacelle.py) |
+| ![Foundation](cad/freecad/renders/wind_v3_foundation.png) | ![Mast Hoisting Rig](cad/freecad/renders/wind_v3_mast_hoist.png) | ![Nacelle](cad/freecad/renders/wind_v3_nacelle.png) |
+| [`wind_v3_foundation.py`](cad/freecad/components/wind_v3_foundation.py) | [`wind_v3_mast_hoist.py`](cad/freecad/components/wind_v3_mast_hoist.py) | [`wind_v3_nacelle.py`](cad/freecad/components/wind_v3_nacelle.py) |
 
 | **Package 4: Segmented NACA Blade & Sleeve Joint** | **Package 5: 400V Hybrid Microgrid Cabinet** | **Package 6: 20 ft ISO Container Internal Stowage** |
 | :---: | :---: | :---: |
@@ -72,8 +72,8 @@ An autonomous, rapidly deployable, containerized polar wind power generation sys
 
 | **Full 50 kW Rotor Operation (Landscape)** | **20 ft Container Unpacking Sequence** | **Gin-Pole Mast Tilt-Up (`v2.0`)** |
 | :---: | :---: | :---: |
-| ![Spinning Landscape](cad/openscad/v2.0/wind_v2_turbine_spinning_landscape.gif) | ![Container Unpacking](cad/openscad/v2.0/wind_v2_container_unpacking.gif) | ![Mast Hoisting v2](cad/openscad/v2.0/wind_v2_mast_erection.gif) |
-| *MP4: [`wind_v2_turbine_spinning_landscape.mp4`](cad/openscad/v2.0/wind_v2_turbine_spinning_landscape.mp4)* | *MP4: [`wind_v2_container_unpacking.mp4`](cad/openscad/v2.0/wind_v2_container_unpacking.mp4)* | *MP4: [`wind_v2_mast_erection.mp4`](cad/openscad/v2.0/wind_v2_mast_erection.mp4)* |
+| ![Spinning Landscape](cad/openscad/v2.0/wind_v2_turbine_spinning_landscape.gif) | ![Container Unpacking](cad/openscad/v2.0/wind_v2_container_unpacking.gif) | ![Mast Hoisting v2](cad/openscad/v2.0/wind_v2_mast_hoist.gif) |
+| *MP4: [`wind_v2_turbine_spinning_landscape.mp4`](cad/openscad/v2.0/wind_v2_turbine_spinning_landscape.mp4)* | *MP4: [`wind_v2_container_unpacking.mp4`](cad/openscad/v2.0/wind_v2_container_unpacking.mp4)* | *MP4: [`wind_v2_mast_hoist.mp4`](cad/openscad/v2.0/wind_v2_mast_hoist.mp4)* |
 
 ---
 
@@ -102,7 +102,7 @@ Run the complete 12-model numerical verification suite from the repository root:
 | **2** | [`power_resource.py`](cad/openscad/v2.0/power_resource.py) | Power Resource Sizing & Betz Limit Audit ($50\text{ kW}$ at $10.5\text{ m/s}$) |
 | **3** | [`container_sizing.py`](cad/openscad/v2.0/container_sizing.py) | ISO 20 ft Container Internal Geometry & Clearance Audit |
 | **4** | [`foundation_load_envelope.py`](cad/openscad/v2.0/foundation_load_envelope.py) | Foundation Overturning Moment & Ballast Stability ($\text{FoS} \ge 1.75$) |
-| **5** | [`erection_kinematics.py`](cad/openscad/v2.0/erection_kinematics.py) | Gin-Pole A-Frame Winch Line Tension & Hoisting Kinematics |
+| **5** | [`hoist_kinematics.py`](cad/openscad/v2.0/hoist_kinematics.py) | Gin-Pole A-Frame Winch Line Tension & Hoisting Kinematics |
 | **6** | [`powertrain_envelope.py`](cad/openscad/v2.0/powertrain_envelope.py) | Direct-Drive PMSG Electromagnetic & Thermal Nacelle Architecture |
 | **7** | [`container_pack_audit.py`](cad/openscad/v2.0/container_pack_audit.py) | Complete 20 ft Container Payload Mass & Center-of-Gravity Audit ($9,216.8\text{ kg}$) |
 | **8** | [`microgrid_dispatch.py`](cad/openscad/v2.0/microgrid_dispatch.py) | Annual Hourly Microgrid & Diesel Fuel Displacement ($21,087\text{ L/yr}$) |

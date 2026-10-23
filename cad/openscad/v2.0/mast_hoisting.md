@@ -1,4 +1,4 @@
-# Wind v2.0 Package 2: Mast Structure & Tilt-Up Erection Kinematics (#86)
+# Wind v2.0 Package 2: Mast Structure & Tilt-Up Hoisting Kinematics (#86)
 
 ## Overview & Zero-Heavy-Lift Mandate
 
@@ -14,7 +14,7 @@ In remote Arctic operations, mobile hydraulic cranes, boom trucks, and excavator
 
 ## 1. Kinematic Sweep & Winch Load Path
 
-Calculated in [`erection_kinematics.py`](erection_kinematics.py):
+Calculated in [`hoist_kinematics.py`](hoist_kinematics.py):
 
 | Elevation Angle ($\theta$) | Gravitational Torque ($M_{\text{grav}}$) | Winch Line Tension ($T_{\text{winch}}$) | Gin-Pole Compression ($F_{\text{comp}}$) | Cable Length ($d_{\text{winch}}$) |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ Calculated in [`erection_kinematics.py`](erection_kinematics.py):
 
 ## 2. Parametric 3D CAD Assembly
 
-Implemented in [`wind_v2_mast_erection.scad`](wind_v2_mast_erection.scad):
+Implemented in [`wind_v2_mast_hoist.scad`](wind_v2_mast_hoist.scad):
 
 - **Variable Inspection:** Accepts parameter `tilt_angle` from `0` to `90` degrees.
 - **Section Joints:** Five flanged segments with $\varnothing 660\text{ mm}$ bolt flanges and visual bolt rings.
@@ -68,11 +68,11 @@ Three key elevation stages rendered from OpenSCAD:
 
 Run the self-checking kinematics simulation:
 ```bash
-python3 cad_and_blender/openscad/wind/v2.0/erection_kinematics.py
+python3 cad_and_blender/openscad/wind/v2.0/hoist_kinematics.py
 ```
 Expected output:
 ```text
-VERIFICATION: PASS -- All mast erection kinematic & structural safety checks pass cleanly.
+VERIFICATION: PASS -- All mast hoisting kinematic & structural safety checks pass cleanly.
   - Section length: 4.80 m <= 5.89 m container limit
   - Winch wire rope safety factor: 6.17 (>= 3.0 required)
   - Gin-pole dual-leg Euler buckling safety factor: 8.99 (>= 2.0 required)
@@ -80,5 +80,5 @@ VERIFICATION: PASS -- All mast erection kinematic & structural safety checks pas
 
 Compile OpenSCAD geometry across elevation angles:
 ```bash
-openscad -o /tmp/wind_v2_mast.csg -D 'tilt_angle=45' cad_and_blender/openscad/wind/v2.0/wind_v2_mast_erection.scad
+openscad -o /tmp/wind_v2_mast.csg -D 'tilt_angle=45' cad_and_blender/openscad/wind/v2.0/wind_v2_mast_hoist.scad
 ```

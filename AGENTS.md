@@ -24,7 +24,7 @@ Where one of these rules conflicts with a general habit, this file wins.
 
 ## 🧭 Ecosystem Scope & Companion Inventions
 
-This repository (`modular-arctic-wind`) is strictly dedicated to the **Modular Arctic Wind Turbine** hardware, aerodynamics, foundations, erection kinematics, and microgrid hybridization suites.
+This repository (`modular-arctic-wind`) is strictly dedicated to the **Modular Arctic Wind Turbine** hardware, aerodynamics, foundations, hoisting kinematics, and microgrid hybridization suites.
 
 Work specific to companion inventions — including **AMU** (Autonomous Modular Unit / Surface Habitat), **CORA-M** (7-DoF Cooperative Robotic Arm), and **STRIDER-M** (Polar Transporter Crawler) — is primarily handled via the parent repository: **[`stellardreams/asi.surge.sh`](https://github.com/stellardreams/asi.surge.sh)**. Always check `asi.surge.sh` for primary updates to those systems.
 

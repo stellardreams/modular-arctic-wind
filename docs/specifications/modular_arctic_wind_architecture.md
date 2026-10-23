@@ -12,7 +12,7 @@
 
 Remote high-latitude installations and austere Arctic operational bases rely heavily on fossil fuels (primarily diesel) transported via seasonal barge or ice-road logistics. Extreme cold environments present unique operational obstacles: temperatures dropping below −50 °C, frequent blizzard gusts exceeding 120 km/h, severe atmospheric rime icing, active-layer permafrost freeze-thaw cycles, and a total absence of heavy commercial construction cranes or specialist maintenance personnel.
 
-The **Modular Arctic Wind Energy System (v3.0)** resolves these challenges through a fully integrated, self-erecting, container-packaged 50 kW class wind turbine architecture. The entire system—including foundation ballast sled, mast sections, aerodynamic rotor, nacelle, erection rigging, and microgrid power conversion electronics—packs into a single standard 20 ft ISO intermodal container footprint, deploys with common hand tools and integrated winches without cranes, and survives continuous operational regimes down to −60 °C.
+The **Modular Arctic Wind Energy System (v3.0)** resolves these challenges through a fully integrated, self-hoisting, container-packaged 50 kW class wind turbine architecture. The entire system—including foundation ballast sled, mast sections, aerodynamic rotor, nacelle, hoisting rigging, and microgrid power conversion electronics—packs into a single standard 20 ft ISO intermodal container footprint, deploys with common hand tools and integrated winches without cranes, and survives continuous operational regimes down to −60 °C.
 
 ---
 
@@ -31,7 +31,7 @@ The **Modular Arctic Wind Energy System (v3.0)** resolves these challenges throu
 | **Extreme Survival Temperature** | **−60 °C** | Structural metallurgy & bearing seal preservation |
 | **Transport Footprint** | **Standard 20 ft ISO** | $6.058\text{ m L} \times 2.438\text{ m W} \times 2.591\text{ m H}$ |
 | **Total Packaged Cargo Mass** | **9,216.8 kg** | Max payload limit: $10,886\text{ kg}$ ($15.3\%$ safety reserve) |
-| **Erection Method** | **Crane-less Gin-Pole** | On-site tilt-up erection via container A-frame winch |
+| **Hoisting Method** | **Crane-less Gin-Pole** | On-site tilt-up hoisting via container A-frame winch |
 | **Grid Electrical Interconnection** | **400V 3-Phase AC** | 4-quadrant bi-directional microgrid inverter |
 
 ---
@@ -98,7 +98,7 @@ At survival storm wind conditions of $120\text{ km/h}$ ($33.3\text{ m/s}$), hori
 
 ---
 
-## 6. Crane-Less Gin-Pole Erection Kinematics
+## 6. Crane-Less Gin-Pole Hoisting Kinematics
 
 Deployment in remote northern outposts cannot assume crane availability. The container roof features an integrated **A-frame Gin-Pole Winch System**:
 
@@ -118,7 +118,7 @@ Deployment in remote northern outposts cannot assume crane availability. The con
   ==========================================
 ```
 
-### Erection Steps:
+### Hoisting Erection Steps Tilt-Up Steps:
 1. **Container Sled Staging:** Position container, deploy outriggers, level base with mechanical jacks, and torque helical anchor stakes.
 2. **Horizontal Mast Assembly:** Unload mast segments and bolt flanges together horizontally on low-friction container-top roller stands.
 3. **Nacelle & Rotor Mounting:** Bolt direct-drive nacelle to tower top; attach 7 blade segments per blade (21 segments total) to hub while at ground level.
@@ -139,7 +139,7 @@ Every component stows securely inside the single 20 ft ISO intermodal shipping c
 | **Direct-Drive Nacelle** | 1 | 1,501.8 | 1,501.8 | 3.40 m L × 1.35 m D | Fits center bay |
 | **Rotor Hub & Spinner** | 1 | 220.0 | 220.0 | 1.10 m D × 1.20 m L | Fits forward bay |
 | **Deployable Outriggers & Pads**| 4 | 212.5 | 850.0 | 2.20 m L × 0.40 m W | Fits floor tracks |
-| **Gin-Pole Erection A-Frame** | 1 | 280.0 | 280.0 | 4.20 m L × 0.20 m D | Fits ceiling rail |
+| **Gin-Pole Hoisting A-Frame** | 1 | 280.0 | 280.0 | 4.20 m L × 0.20 m D | Fits ceiling rail |
 | **Planetary Hoist Winch** | 1 | 400.0 | 400.0 | 0.80 m × 0.70 m × 0.60 m| Floor mounted |
 | **Guy Cables & Hardware** | 1 set | 400.0 | 400.0 | Stowed in crates | Wall strapped |
 | **Microgrid Power Cabinet** | 1 | 650.0 | 650.0 | 1.80 m H × 1.40 m W | Bulkhead mounted |
