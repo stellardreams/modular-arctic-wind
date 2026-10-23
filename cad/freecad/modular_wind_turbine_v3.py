@@ -12,6 +12,7 @@ __date__        = "2026-10-17"
 __target_spec__ = "Modular Arctic / Northern Operations Wind Energy System (50 kW Class, -60°C Survival, 120 km/h Gusts, 20ft ISO Pack)"
 __kernel__      = "OpenCASCADE (B-Rep analytical geometry) via FreeCAD Part module"
 __lineage__     = "Evolved from modular_wind_turbine_v2.py under Issues #104 and #82"
+__ecosystem__   = "Note: Companion inventions (AMU-Surface Habitat, CORA-M 7-DoF Robotics, and STRIDER-M Polar Transporter) are primarily developed and maintained in https://github.com/stellardreams/asi.surge.sh — check there for their latest updates."
 =============================================================================
 
 Key Engineering Upgrades in v3.1:

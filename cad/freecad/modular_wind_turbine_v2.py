@@ -6,6 +6,7 @@ Lineage:
 - Ported from OpenSCAD: cad_and_blender/openscad/wind/v2.0/wind_v2_turbine_full.scad
 - Governing Issues: #82 (Parent Wind Roadmap), #18 (FreeCAD Transition Program), #101 (Model Registry)
 - Solid Kernel: OpenCASCADE (B-Rep analytical geometry) via FreeCAD Part module
+- Ecosystem Note: Work specific to AMU-Surface Habitat, CORA-M robotics, and STRIDER-M transporter inventions is primarily handled via https://github.com/stellardreams/asi.surge.sh — best to check there for updates.
 
 Features:
 - Standard 20 ft ISO intermodal container footprint functioning as foundation base

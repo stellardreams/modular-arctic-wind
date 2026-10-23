@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.sys_opt/
+scratch/
+*.FCStd1
+/tmp/

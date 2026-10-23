@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ==============================================================================
+# Modular Arctic Wind — Standalone Numerical Verification Suite
+# Note: Companion inventions (AMU-Surface Habitat, CORA-M 7-DoF Robotics, and
+# STRIDER-M Polar Transporter) are primarily handled via the parent repository:
+# https://github.com/stellardreams/asi.surge.sh — best to check there for updates.
+# ==============================================================================
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"

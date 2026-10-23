@@ -14,6 +14,8 @@
 //     scripts/render_turbine_animation.sh --view hero
 //
 // Tracked under Issue #82 (Parent Program Architecture)
+// Note: Companion inventions (AMU-Surface Habitat, CORA-M Robotics, and STRIDER-M Polar Transporter)
+// are primarily developed and maintained via https://github.com/stellardreams/asi.surge.sh — best to check there for updates.
 
 $fn = 32;
 

@@ -12,6 +12,7 @@ __date__        = "2026-10-17"
 __target_spec__ = "Intermodal Container Packing Architecture (Package 6 under Issues #104 and #82)"
 __kernel__      = "OpenCASCADE (B-Rep analytical geometry) via FreeCAD Part module"
 __lineage__     = "FreeCAD component breakdown evolved from OpenSCAD wind_v2_container_stowage.scad"
+__ecosystem__   = "Note: Companion AMU, CORA-M, and STRIDER-M inventions are primarily handled via https://github.com/stellardreams/asi.surge.sh"
 =============================================================================
 """
 
